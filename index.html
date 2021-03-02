@@ -11,29 +11,33 @@
 
 <body>
 
-    <div class="formdiv">
-        <form action="">
+    <div class="outerdiv">
+        <div class="formdiv">
+            <form class="formx">
+    
+                <div class="usrdiv">
+                    <input type="text" name="username" placeholder="Enter Username" id="usrName">
+                </div>
+    
+                <div class="email">
+                    <input type="text" name="email" placeholder="Enter Email">
+                </div>
+    
+                <div class="password">
+                    <input type="text" name="email" placeholder="Enter Password">
+                </div>
+    
+                <div class="btn">
+                    <button type="submit" name="submit">Enter</button>
+                </div>
 
-            <div class="username">
-                <input type="text" name="usrname" placeholder="Enter Username">
-            </div>
-
-            <div class="email">
-                <input type="text" name="email" placeholder="Enter Email">
-            </div>
-
-            <div class="password">
-                <input type="text" name="email" placeholder="Enter Password">
-            </div>
-
-            <div class="btn">
-                <button type="submit" name="submit">Enter</button>
-            </div>
-
-        </form>
+                <div class="feedback"></div>
+    
+            </form>
+        </div>
     </div>
 
-    <script src="/app.js" async></script>
+    <script src="app.js" async></script>
 </body>
 
 </html>

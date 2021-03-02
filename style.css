@@ -1,18 +1,41 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.outerdiv{
+    display: flex;
+    justify-content: center;
+        margin-top: 50px;
 }
 
 .formdiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    max-width: 960px;
+    width: 960px;
 }
 
 input{
-    width: 100%;
+    width: 60%;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+button{
+    margin-top: 25px;
+    width: 25%;
+    height: 55px;
+    background-color: forestgreen;
+    color: #fff;
+    font-size:18px;
+}
+
+.success{
+    border-color:2px solid lime;    
+}
+
+.error{
+    border-color:2px solid red;
 }
