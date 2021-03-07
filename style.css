@@ -32,6 +32,16 @@ button{
     font-size:18px;
 }
 
+.btnclear{
+    margin-top: 25px;
+    width: 25%;
+    height: 55px;
+    background-color: rebeccapurple;
+    color: #fff;
+
+    font-size:18px;
+}
+
 .success{
     border:4px solid lime;    
 }

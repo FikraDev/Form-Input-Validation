@@ -6,6 +6,8 @@ const regEx = /^(?=.*[A-Z])[a-zA-Z0-9]{5,}$/;  //(?=.*[A-Z])for at least one UC 
 
 const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+const error = document.querySelector('.errormsg');
+
 
 form.username.addEventListener('keyup', e =>{ //verify that each key entry produces a valid entry 
     
@@ -24,8 +26,24 @@ button.addEventListener('click', ()=>{
 });
 
 function  checkNull(){
-    if(form.username.value==='' || form.email.value==='' || form.pwd.value===''){
-        alert('You Have and Empty Field')
+
+    if(form.username.value===''){
+        form.username.setAttribute('class', 'error');
+        error.textContent='* Username Required';
+        error.style.color='red';
+        error.style.fontWeight='bold';
+    } 
+    else if (form.email.value===''){
+        form.email.setAttribute('class', 'error');
+        error.textContent='* Email Required';
+        error.style.color='red';
+        error.style.fontWeight='bold';
+    }
+    else if(form.pwd.value===''){
+        form.pwd.setAttribute('class', 'error');
+        error.textContent='* Password Required';
+        error.style.color='red';
+        error.style.fontWeight='bold';
     }
 }
 
